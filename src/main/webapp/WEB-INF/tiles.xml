@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+
+
+	<definition name="base.definition" template="/layout/layout.jsp">
+		<put-attribute name="header" value="/common/header.jsp" />
+		<put-attribute name="menu" value="/common/menu.jsp" />
+		<put-attribute name="body" value="" />
+
+	</definition>
+
+	<definition name="org.definition" template="/layout/orglayout.jsp">
+		<put-attribute name="header" value="/common/orgheader.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="separate.definition" template="/layout/separatelayout.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<definition name="base.login" template="/layout/loginlayout.jsp">
+		<put-attribute name="body" value="" />
+
+	</definition>
+
+	<definition name="login" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/loggedin.jsp" />
+	</definition>
+	<definition name="products" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/products.jsp" />
+	</definition>
+	<definition name="orders" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/orders.jsp" />
+	</definition>
+	<definition name="editProduct" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/editProduct.jsp" />
+	</definition>
+	<definition name="customers" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/customers.jsp" />
+	</definition>
+	<definition name="blogsall" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/blogsall.jsp" />
+	</definition>
+		<definition name="manageblogs" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/manageblogs.jsp" />
+	</definition>
+	<definition name="basicconf" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/basicconf.jsp" />
+	</definition>
+	<definition name="menu" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/addMenu.jsp" />
+	</definition>
+	<definition name="theme" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/theme.jsp" />
+	</definition>
+		<definition name="customers" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/customers.jsp" />
+	</definition>
+	<definition name="index" extends="base.login">
+		<put-attribute name="body" value="index.jsp" />
+	</definition>
+	
+
+	
+	<definition name="sampleBlog" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/sampleBlog.jsp" />
+	</definition>
+	
+	<definition name="products" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/products.jsp" />
+	</definition>
+	
+	<definition name="careers" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/careers.jsp" />
+	</definition>
+	
+	<definition name="remote" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/remote.jsp" />
+	</definition>
+	
+	<definition name="cctvsecurity" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/cctvsecurity.jsp" />
+	</definition>
+	
+	<definition name="support" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/support.jsp" />
+	</definition>
+
+	<definition name="orgservices" extends="org.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/orgservices.jsp" />
+	</definition>
+	<definition name="orgcontactus" extends="org.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/orgcontactus.jsp" />
+	</definition>
+	<definition name="orgaboutus" extends="org.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/orgaboutus.jsp" />
+	</definition>
+	<definition name="orghome" extends="org.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/orghome.jsp" />
+	</definition>
+	<definition name="separatehome" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/separatehome.jsp" />
+	</definition>
+	
+	<definition name="smallbusinesshome" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/smallbusinesshome.jsp" />
+	</definition>
+	<definition name="restauranthome" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/restauranthome.jsp" />
+	</definition>
+
+
+
+
+	<definition name="blogs" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/blogs.jsp" />
+	</definition>
+	
+	<definition name="admin" extends="separate.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/admin.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>

@@ -1,0 +1,130 @@
+BODY{margin:0px; font-size:0.75em; padding:0px; font-family:Arial, Helvetica, sans-serif;}
+TABLE{ font-size:1em;  font-family:Arial, Helvetica, sans-serif;}
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc; 
+       max-width: 675px;   
+	word-break: break-word;
+}
+
+.bordered td, .bordered th
+ {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    text-align: left; 
+    word-wrap: break-word;
+    *word-wrap: normal;   
+	vertical-align:top
+}
+
+.bordered tr th img, .bordered tr td img {vertical-align:middle;border:0px;}
+
+
+.bordered td:first-child  {
+    border-left: none;
+}
+
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+
+
+.bordered tr:first-child td:first-child {
+   -moz-border-radius: 0 0 0 0; -webkit-border-radius: 0 0 0 0; border-radius: 0 0 0 0;
+}
+
+.bordered tr:first-child td:last-child {
+   -moz-border-radius: 0 0 0 0; -webkit-border-radius: 0 0 0 0; border-radius: 0 0 0 0;
+}
+
+
+.bordered th:only-child {
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+.bordered tr:only-child {
+	-moz-border-radius: 5px 0 0 5px; -webkit-border-radius: 5px 0 0 5px; border-radius:5px 5px 5px 5px;
+
+	}
+	
+.bordered tr:only-child  td:first-child {
+	-moz-border-radius: 0 0 5px 0; -webkit-border-radius: 0 0 5px 0; border-radius:0 0 5px 0;
+
+	}
+
+
+
+
+
+
+.bordered tr:last-child td:only-child {
+   -moz-border-radius: 5px 5px 5px 5px; -webkit-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px;
+}
+
+.bordered tr:last-child td:first-child, .bordered2 tr:last-child td:first-child {
+   -moz-border-radius: 0 0 0 5px; -webkit-border-radius: 0 0 0 5px; border-radius: 0 0 0 5px;
+}
+
+.bordered tr:last-child td:last-child, .bordered2 tr:last-child td:last-child {
+   -moz-border-radius: 0 0 5px 0; -webkit-border-radius: 0 0 5px 0; border-radius: 0 0 5px 0;
+}
+
+
+.bordered tr:nth-child(odd), .bordered2 tr:nth-child(odd) { background-color:#f8f8f8; }
+.bordered tr:nth-child(even)  ,.bordered2 tr:nth-child(even) { background-color:#fff; }
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+	color: black;
+	cursor:default;
+	text-decoration: none;
+	
+}
+
+.bordered tr th{
+color: #666;
+text-decoration: none;
+}
+
+.bordered tr:hover th{
+color: #666;
+text-decoration: none;
+}
+ .bordered thead tr:first-child:hover {
+text-decoration: none;
+color: #666;
+cursor:default;
+}
+
+.left {
+	clear: both;
+	float: right;
+	margin-right: 30%;
+}
